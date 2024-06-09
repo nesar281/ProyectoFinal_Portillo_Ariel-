@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cartMessage = document.getElementById("cart-message");
     const thankYouMessage = document.getElementById("thank-you-message");
 
-    // Fetch users from external URL
+    // Fetch users desde URL externa 
     const fetchUsers = () => {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     };
 
-    // Fetch users when the page loads
+    // Fetch users cuando se carga la página 
     fetchUsers();
 
     // Función para renderizar productos
