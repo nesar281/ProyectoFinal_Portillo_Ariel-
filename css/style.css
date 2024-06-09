@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #343a40;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav button {
+    margin-left: 10px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.card img {
+    height: 400px;
+    object-fit: contain;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+#login-modal .modal-header {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#cart-modal .modal-header {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#thank-you-message {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-items .btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+#login-error {
+    margin-top: 10px;
+    color: red;
+}

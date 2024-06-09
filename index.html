@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert script -->
+</head>
+
+<body>
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3">Alternativa cero</h1>
+            <nav>
+                <button id="login-btn" class="btn btn-outline-light">Login</button>
+                <button id="cart-btn" class="btn btn-outline-light">Carrito (<span id="cart-count">0</span>)</button>
+            </nav>
+        </div>
+    </header>
+    <main class="container my-4">
+        <div id="product-list" class="row"></div>
+    </main>
+
+    <!-- Modal para Login -->
+    <div id="login-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="username">Usuario:</label>
+                            <input type="text" id="username" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña:</label>
+                            <input type="password" id="password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <p id="login-error" class="text-danger mt-2"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Carrito -->
+    <div id="cart-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrito de Compras</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cart-items" class="list-group"></div>
+                    <button id="checkout-btn" class="btn btn-success mt-3">Finalizar Compra</button>
+                    <p id="cart-message" class="text-info mt-2"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mensaje de Agradecimiento -->
+    <div id="thank-you-message" class="container text-center mt-5" style="display: none;">
+        <h2>¡Muchas gracias por tu compra!</h2>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
